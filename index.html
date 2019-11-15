@@ -13,6 +13,28 @@
 </head>
 
 <body>
+  <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+    <svg id="collapsed-icon" viewBox="0 0 100 100">
+      <polygon points="10,10 10,90 90,50" style="fill:#E8E8E8" />
+    </svg>
+    <svg id="open-icon" viewBox="0 0 100 100">
+      <polygon points="90,10 90,90 10,90" style="fill:#E8E8E8" />
+    </svg>
+    <svg id="close-file" viewBox="0 0 100 100">
+        <g stroke="#E8E8E8" stroke-width="16px">
+        <polygon points="20,20 80,80" />
+        <polygon points="80,20 20,80" />
+        </g>
+    </svg>
+    <svg id="file-css-icon" viewBox="0 0 100 100">
+      <g stroke="#519ABA" stroke-width="12px" transform="skewX(-10)">
+        <polygon points="35,5 35,95" />
+        <polygon points="65,5 65,95" />
+        <polygon points="10,35 90,35" />
+        <polygon points="0,65 90,65" />
+      </g>
+    </svg>
+  </div>
   <div class="main-container">
     <div class="container">
       <div class="vscode">
@@ -26,11 +48,73 @@
           <div class="vscode-buttons"></div>
         </div>
         <div class="vscode-main-body">
-          <div class="vscode-activity-bar">
-
+          <div class="vscode-activity-bar"></div>
+          <div class="vscode-explorer">
+            <div class="vscode-explorer-title">EXPLORER</div>
+            <div class="vscode-explorer-group">
+              <div class="vscode-explorer-group-header">
+                <svg class="small-icon"><use href="#collapsed-icon"></use></svg>
+                <div class="vscode-explorer-group-header-text">OPEN EDITORS</div>
+              </div>
+            </div>
+            <div class="vscode-explorer-group open-explorer-window">
+              <div class="vscode-explorer-group-header">
+                <svg class="small-icon"><use href="#open-icon"></use></svg>
+                <div class="vscode-explorer-group-header-text">GITHUB</div>
+              </div>
+              <div class="vscode-explorer-group-body">
+                <div class="vscode-explorer-group-body-folder">
+                  <svg class="small-icon"><use href="#collapsed-icon"></use></svg>
+                  <div class="vscode-explorer-group-body-text">Tools</div>
+                </div>
+              </div>
+              <div class="vscode-explorer-group-body">
+                <div class="vscode-explorer-group-body-folder">
+                  <svg class="small-icon"><use href="#open-icon"></use></svg>
+                  <div class="vscode-explorer-group-body-text">Sample CSS Files</div>
+                </div>
+                <div class="vscode-explorer-group-body-folder folder-level-1">
+                  <svg class="small-icon"><use href="#open-icon"></use></svg>
+                  <div class="vscode-explorer-group-body-text">CSS</div>
+                </div>
+                <div class="vscode-explorer-group-body-folder folder-level-2">
+                  <svg class="file-type-icon"><use href="#file-css-icon"></use></svg>
+                  <div class="vscode-explorer-group-body-text">vscode.css</div>
+                </div>
+                <div class="vscode-explorer-group-body-folder folder-level-1">
+                  <svg class="small-icon"><use href="#collapsed-icon"></use></svg>
+                  <div class="vscode-explorer-group-body-text">node_modules</div>
+                </div>
+              </div>
+              <div class="vscode-explorer-group-body">
+                <div class="vscode-explorer-group-body-folder">
+                  <svg class="small-icon"><use href="#collapsed-icon"></use></svg>
+                  <div class="vscode-explorer-group-body-text">Linux</div>
+                </div>
+              </div>
+            </div>
+            <div class="vscode-explorer-group">
+              <div class="vscode-explorer-group-header">
+                <svg class="small-icon"><use href="#collapsed-icon"></use></svg>
+                <div class="vscode-explorer-group-header-text">OUTLINE</div>
+              </div>
+            </div>
+            <div class="vscode-explorer-group">
+              <div class="vscode-explorer-group-header">
+                <svg class="small-icon"><use href="#collapsed-icon"></use></svg>
+                <div class="vscode-explorer-group-header-text">NPM SCRIPTS</div>
+              </div>  
+            </div>
           </div>
-          <div class="vscode-explorer"></div>
-          <div class="vscode-main-editor"></div>
+          <div class="vscode-main-editor">
+            <div class="vscode-main-editor-tabbar">
+              <div class="tab-entry">
+                <svg class="file-type-icon"><use href="#file-css-icon"></use></svg>
+                <div class="vscode-explorer-group-header-text">vscode.css</div>
+                <svg class="file-type-icon"><use href="#close-file"></use></svg>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="vscode-footer"></div>
       </div>
