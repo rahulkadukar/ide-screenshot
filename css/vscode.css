@@ -1,0 +1,79 @@
+.vscode {
+  width: 960px;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+}
+
+.vscode-activity-bar {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  background-color: #333333;
+}
+
+.vscode-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 80px;
+}
+
+svg {}
+
+.vscode-explorer {
+  width: 200px;
+  background-color: #252525;
+}
+
+.vscode-main-editor {
+  background-color: #1E1E1E;
+  flex-grow: 1;
+}
+
+.vscode-footer {
+  background-color: #007ACC;
+  height: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.vscode-header {
+  height: 20px;
+  background-color: #3C3C3C;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.vscode-main-body {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.vscode-title {
+  color: #C7CCCC;
+  font-size: 12px;
+}
+
+.macos-button {
+  width: 11px;
+  height: 11px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.macos-red {
+  background-color: #FD5858;
+}
+
+.macos-yellow {
+  background-color: #FFBD44;
+}
+
+.macos-green {
+  background-color: #00CA4E;
+}

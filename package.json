@@ -1,0 +1,22 @@
+{
+  "name": "ide-screenshot",
+  "version": "1.0.0",
+  "description": "Generate IDE screenshots",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulkadukar/ide-screenshot.git"
+  },
+  "author": "Rahul Kadukar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahulkadukar/ide-screenshot/issues"
+  },
+  "homepage": "https://github.com/rahulkadukar/ide-screenshot#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
